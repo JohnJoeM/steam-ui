@@ -1,0 +1,172 @@
+﻿<Window x:Class="Player_Investigator_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Player_Investigator_UI"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        Height="650" Width="900">
+
+
+    <Border Background="#98b4e3"
+            CornerRadius="20">
+        <Grid ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="130">
+
+                </RowDefinition>
+                <RowDefinition>
+
+                </RowDefinition>
+                <RowDefinition>
+
+                </RowDefinition>
+                <RowDefinition>
+
+                </RowDefinition>
+                <RowDefinition>
+
+                </RowDefinition>
+              
+                
+
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300">
+
+                </ColumnDefinition>
+                <ColumnDefinition>
+
+                </ColumnDefinition>
+
+
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Text="Rating:"
+                       Grid.Row="1"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="Black"
+                   FontSize="30"/>
+            
+            <TextBlock Text="Hours:"
+                       Grid.Row="2"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="Black"
+                   FontSize="30"/>
+            
+            <TextBlock Text="Created:"
+                       Grid.Row="3"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="Black"
+                   FontSize="30"/>
+
+            <TextBlock Text="Friends:"
+                       Grid.Row="4"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="Black"
+                   FontSize="30"/>
+
+
+            <Button Content="Check" 
+                    BorderThickness="1" 
+                    BorderBrush="Black"
+                    Grid.Row="0"
+                    Width="200"
+                    Height="75"
+                    FontSize="30" Click="Button_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="10" Background="{TemplateBinding Background}" BorderThickness="1" BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+                
+
+            </Button>
+            
+
+            <TextBox Width="500" 
+                     Height="30"
+                     Margin="0,40,0,0"
+                     Grid.Column="1"
+                     Text="Paste Steam ID Here" 
+                     Background="LightGray" 
+                     BorderThickness="1" 
+                     BorderBrush="DarkGray" 
+                     FontFamily="Segoe UI" 
+                     FontSize="20" 
+                     Foreground="#80000000"/>
+
+            <TextBox Width="500" 
+                     Height="30"
+                     Margin="0,0,0,40"
+                     Grid.Column="1"
+                     Text="Paste Key Here" 
+                     Background="LightGray" 
+                     BorderThickness="1" 
+                     BorderBrush="DarkGray" 
+                     FontFamily="Segoe UI" 
+                     FontSize="20" 
+                     Foreground="#80000000"/>
+
+            <TextBlock Text="Percentage goes here"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="#306ed9"
+                       FontSize="30"
+                       TextDecorations="Underline"/>
+
+            <TextBlock Text="Hours go here"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="#306ed9"
+                       FontSize="30"
+                       TextDecorations="Underline"/>
+
+            <TextBlock Text="date created goes here"
+                       Grid.Row="3"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="#306ed9"
+                       FontSize="30"
+                       TextDecorations="Underline"/>
+
+            <TextBlock Text="how many friends go here"
+                       Grid.Row="4"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="#306ed9"
+                       FontSize="30"
+                       TextDecorations="Underline"/>
+
+
+        </Grid>
+
+
+
+
+
+
+
+
+    </Border>
+</Window>
